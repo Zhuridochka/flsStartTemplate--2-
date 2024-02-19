@@ -17,16 +17,29 @@ h1 {
   display: flex;
   justify-content: space-between;
   width: 200px;
-  color: black;
+ 
 }
 
-.swiper-button-prev::after img{
-  width: 100%;
-  color: blue;
+.swiper-button {
+  width: 30px;
+  height: 30px;
+  background: #313131;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.swiper-button-prev::after img {
-  width: 100%;
-  color: blue;
+
+.swiper-button-prev {
+  img {
+    width: 100%;
+  } 
+}
+
+.swiper-button-next {
+  img {
+    width: 100%;  }
+ 
 }
 
 .swiper {
