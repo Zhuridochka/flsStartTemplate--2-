@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"HomePage"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<div class="page-top">
+					<h1>Slider-swiper</h1>
+					<div class="navigation">
+						<!-- If we need navigation buttons -->
+						<div class="swiper-button-prev">
+							<img src="/src/img/arrow_left.svg" alt="Previous">
+						</div>
+						<div class="swiper-button-next">
+							<img src="/src/img/arrow_right.svg" alt="Next">
+						</div>
+					</div>
+				</div>
+	<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+	
+    <!-- Slides -->
+    <div class="swiper-slide">
+			<div class="swiper-slide__image">
+				<img src="img/01.jpg" alt="Photo">
+			</div>
+		</div>
+    <div class="swiper-slide">
+			<div class="swiper-slide__image">
+				<img src="img/02.jpg" alt="Photo">
+			</div>
+		</div>
+    <div class="swiper-slide">
+			<div class="swiper-slide__image">
+				<img src="img/03.jpg" alt="Photo">
+			</div>
+		</div>
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

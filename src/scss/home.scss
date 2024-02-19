@@ -1,0 +1,48 @@
+//====================================================================================================
+
+//====================================================================================================
+
+.page {
+}
+.page-top {
+  display:flex;
+  justify-content: space-between;
+}
+h1 {
+  font-size: 30px;
+  color: gray;
+  font-weight: 700;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  color: black;
+}
+
+.swiper-button-prev::after img{
+  width: 100%;
+  color: blue;
+}
+.swiper-button-prev::after img {
+  width: 100%;
+  color: blue;
+}
+
+.swiper {
+  padding: 30px 0 70px 0;
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+
+		&__image {
+      text-align: center;
+      img {
+        max-width: 100%;
+      }
+		}
+}
+.swiper-pagination {
+}
+
