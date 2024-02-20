@@ -5,6 +5,7 @@
 .page {
 }
 .page-top {
+  padding: 30px 20px 70px 20px;
   display:flex;
   justify-content: space-between;
 }
@@ -14,32 +15,45 @@ h1 {
   font-weight: 700;
 }
 .navigation {
-  display: flex;
-  justify-content: space-between;
-  width: 200px;
- 
+display: flex;
+gap: 10px;
 }
 
-.swiper-button {
-  width: 30px;
-  height: 30px;
+.swiper-button-prev,
+.swiper-button-next {
+  width: 44px;
+  height: 44px;
   background: #313131;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  img {
+   font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @media (any-hover:hover) {
+    &:hover {
+      background: #FBCE51;
+    }
+  }
+
+  &.swiper-button-disabled {
+    background: #D6D6D6;
+  }
 }
 
-.swiper-button-prev {
-  img {
-    width: 100%;
-  } 
+.swiper-pagination {
+  width: 44px;
+  color: black;
+  font-size: toRem(16);
 }
 
 .swiper-button-next {
-  img {
-    width: 100%;  }
- 
+  
 }
 
 .swiper {
