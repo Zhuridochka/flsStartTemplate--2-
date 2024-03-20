@@ -20,9 +20,9 @@ EffectFade, Lazy, Manipulation
 // Базові стилі
 import "../../scss/base/swiper.scss";
 // Повний набір стилів з scss/libs/swiper.scss
-// import "../../scss/libs/swiper.scss";
+//import "../../scss/libs/swiper.scss";
 // Повний набір стилів з node_modules
-// import'swiper/css';
+//import'swiper/css';
 
 // Ініціалізація слайдерів
 function initSliders() {
@@ -36,8 +36,8 @@ function initSliders() {
 			modules: [Navigation],
 			observer: true,
 			observeParents: true,
-			slidesPerView: 1,
-			spaceBetween: 0,
+			slidesPerView: 2,
+			spaceBetween: 20,
 			//autoHeight: true,
 			speed: 800,
 
@@ -59,7 +59,7 @@ function initSliders() {
 			// Пагінація
 		
 			pagination: {
-				el: '.navigation .swiper-pagination',
+				el: '.page-slider .swiper-pagination',
 				// clickable: true,
 
 				type: 'fraction',
@@ -67,17 +67,17 @@ function initSliders() {
 			
 
 			// Скроллбар
-			/*
+			
 			scrollbar: {
 				el: '.swiper-scrollbar',
 				draggable: true,
 			},
-			*/
+		
 
 			// Кнопки "вліво/вправо"
 			navigation: {
-				prevEl: '.swiper-button-prev',
-				nextEl: '.swiper-button-next',
+				prevEl: '.page-slider .swiper-button-prev',
+				nextEl: '.page-slider .swiper-button-next',
 				disabledClass: 'swiper-button-disabled',
 			},
 			/*
