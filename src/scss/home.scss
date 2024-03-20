@@ -110,10 +110,15 @@ min-height: 100%;
       font-size: 16px;
       text-align: center;
     }
-    &:hover {
-      background-color: #FBCE51;
-    }
+  	@media (any-hover:hover) {
+			&:hover {
+				background: #FBCE51;
+		}
+    &.swiper-button-disabled {
+			background: #D6D6D6;
+		}
   }
+}
 
   &__arrow-next {
   }
