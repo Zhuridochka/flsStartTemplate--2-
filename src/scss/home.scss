@@ -1,75 +1,190 @@
 //====================================================================================================
-
+@import url('https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,regular,italic,700');
+@import url('https://fonts.googleapis.com/css?family=Golos+Text:regular,500,600,700');
 //====================================================================================================
 
-.page {
+/*-------Рабочая область--------*/
+
+body {
+	font-size: 1rem;
+	color: #313131;
+	font-family: 'GolosText';
 }
 
-.page-slide {
-
-}
-.page-top {
-  padding: 30px 20px 70px 20px;
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-}
-h1 {
-  font-size: 30px;
-  color: gray;
-  font-weight: 700;
-}
-.navigation {
-  position: relative;
-  display: flex;
-  align-items: center; 
-  justify-content: center; 
-  gap: 20px;
+.wrapper {
+min-height: 100%;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-  width: 44px;
-  height: 44px;
-  background: #313131;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  img {
-   font-size: 16px;    
-  }
-  @media (any-hover:hover) {
-    &:hover {
-      background: #FBCE51;
-    }
-  }
-
-  &.swiper-button-disabled {
-    background: #D6D6D6;
-  }
+/*========Технічні класси=================================*/
+[class*="__container"] {
+	max-width: 1266px; /**обмежуючий контейнер+відступи*/
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
-.swiper {
-  padding: 30px 0 70px 0;
+// ._ibg {
+// 	position: relative;
+// }
+
+// ._ibg img {
+// 	position: absolute;
+// 	width: 100%;
+// 	height: 100%;
+// 	top: 0;
+// 	left: 0;
+// 	object-fit: cover;
+// }
+
+.swiper-container {
 }
+
 .swiper-wrapper {
 }
 
 .swiper-slide {
-	&__image {
-      text-align: center;
-      img {
-        max-width: 100%;
-      }
-		}
 }
-.page-slider .swiper-pagination {
-  width: 44px;  
-  height: 44px;
-	font-size: 16px;
-	font-weight: 700;
-	color:red;
+	
+/*========МОДУЛІ===========================================*/
+	
+.page-participants {
 }
 
+.participants {
+  margin-bottom: 140px;
+
+		&__container {
+		}
+
+    &__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 70px;
+    }
+
+		&__slider {     
+		}
+
+		&__body {
+      margin: 0px -15px;
+      display: flex;
+		}
+		&__column {
+      padding: 0 15px;
+      flex: 0 1 33.3333%;
+		}
+		&__items {
+		}
+}
+
+.top-participants {
+
+  &__title {
+    font-size: 54px;
+    line-height: 120%;
+    font-family: 'Merriweather';
+    font-weight: 500;
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+}
+.navigation {
+
+  &__arrow-prev,
+  &__arrow-next {
+    width: 44px;
+    height: 44px;
+    background-color: #313131;
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    img {
+      font-size: 16px;
+      text-align: center;
+    }
+    &:hover {
+      background-color: #FBCE51;
+    }
+  }
+
+  &__arrow-next {
+  }
+}
+.swiper-pagination {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.swiper-container {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.item-participants {
+  display: flex;
+	flex-direction:column;
+	height: 100%;
+  justify-content: center; /* Выравнивание по горизонтали по центру */
+  align-items: center;
+
+		&__photo {
+      position: relative;
+      width: 320px;
+      height: 320px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // background-color: #C7BBA9;
+      border-radius: 50%;
+      margin-bottom: 28px;
+
+      img {
+        position: absolute;
+        bottom: 0;
+        max-width: 100%;
+        border-radius: 50%;	
+      }
+		}
+
+		&__content {
+      text-align: center;
+      padding: 0 54px;
+      flex: 1 1 auto;
+		}
+
+		&__name {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 120%;
+      letter-spacing: 12;
+      margin-bottom: 6px;
+		}
+
+		&__status {
+      font-size: 20px;
+      line-height: 120%;
+      letter-spacing: 12;
+      margin-bottom: 20px;
+		}
+
+		&__button {
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      color: #3057A2;
+      padding: 12px 20px;
+      border: 1px solid #3057A2;
+      border-radius: 62px;
+      max-width: 113px;
+		}
+}

@@ -7,65 +7,80 @@
 		<div class="wrapper">
 			@@include('html/_header.htm',{})
 			<main class="page">	
-				<section class="page-slider">
-					<!-- Slider main container -->
-					<div class="swiper">
-						<div class="page-top">
-							<h1>Slider-swiper</h1>
-							<div class="navigation">
-								<!-- If we need navigation buttons -->
-								<div class="swiper-button-prev">
-									<img src="@img/Arrow_prev.svg" alt="Prev">
+				<section class="page-participants participants">
+					<div class="participants__container">
+						<div class="participants__top top-participants">
+							<div class="top-participants__title">Участники турнира</div>
+								<div class="top-participants__navigation navigation">
+									<div class="navigation__arrow-prev">
+										<img src="@img/Arrow_prev.svg" alt="prev">
+									</div>
+										<!---Отображение нумерции слайдеров--->
+										<div class="swiper-pagination"></div>
+									<div class="navigation__arrow-next">
+										<img src="@img/Arrow_next.svg" alt="next">
+									</div>
 								</div>
-									<!-- If we need pagination -->
-									<div class="swiper-pagination"></div>
-								<div class="swiper-button-next">
-								<img src="@img/Arrow_next.svg" alt="Next">
-								</div>
-							</div>
-						</div>
-						<!-- Additional required wrapper -->
-						<div class="swiper-wrapper">
-							<!-- Slides -->
-							<div class="swiper-slide">
-								<div class="swiper-slide__image _ibg">
-									<img src="@img/01.jpg" alt="Photo">
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="swiper-slide__image _ibg">
-									<img src="@img/02.jpg" alt="Photo">
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="swiper-slide__image _ibg">
-									<img src="@img/03.jpg" alt="Photo">
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="swiper-slide__image _ibg">
-									<img src="@img/04.jpg" alt="Photo">
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="swiper-slide__image _ibg">
-									<img src="@img/05.jpg" alt="Photo">
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="swiper-slide__image _ibg">
-									<img src="@img/06.jpg" alt="Photo">
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="swiper-slide__image _ibg">
-									<img src="@img/07.png" alt="Photo">
-								</div>
-							</div>
-						</div>
+						 </div>
+					<div class="participants__slider swiper-container">
+						 <div class="participants__body swiper-wrapper">
+							 <div class="participants__column swiper-slide">
+									<article class="participants__items item-participants">
+										 <div class="item-participants__photo">
+											<img src="@img/07.png" alt="Image">
+										</div> 
+											<div class="item-participants__content">
+												<div class="item-participants__name">Хозе-Рауль Капабланка</div>
+												<div class="item-participants__status">Чемпион мира по шахматам</div>
+											</div>
+												<button type="button" class="item-participants__button">Подробнее
+												</button>
+									</article>
+							 </div>
+							 <div class="participants__column swiper-slide">
+									<article class="participants__items item-participants">
+										 <div class="item-participants__photo">
+											<img src="@img/07.png" alt="Image">
+										</div> 
+											<div class="item-participants__content">
+												<div class="item-participants__name">Эммануил Ласкер</div>
+												<div class="item-participants__status">Чемпион мира по шахматам Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, similique.
+												</div>
+											</div>
+												<button type="button" class="item-participants__button">Подробнее
+												</button>
+									</article>
+							 </div>
+							 <div class="participants__column swiper-slide">
+									<article class="participants__items item-participants">
+										 <div class="item-participants__photo">
+											<img src="@img/07.png" alt="Image">
+										</div> 
+											<div class="item-participants__content">
+												<div class="item-participants__name">Александр Алехин</div>
+												<div class="item-participants__status">Чемпион мира по шахматам </div>
+											</div>
+												<button type="button" class="item-participants__button">Подробнее
+												</button>
+									</article>
+							 </div>
+							 <div class="participants__column swiper-slide">
+								<article class="participants__items item-participants">
+									 <div class="item-participants__photo">
+										<img src="@img/07.png" alt="Image">
+									</div> 
+										<div class="item-participants__content">
+											<div class="item-participants__name">Эммануил Ласкер</div>
+											<div class="item-participants__status">Чемпион мира по шахматам
+											</div>
+										</div>
+											<button type="button" class="item-participants__button">Подробнее
+											</button>
+								</article>
+						 </div>
 						
-							<!-- If we need scrollbar -->
-							<div class="swiper-scrollbar"></div>
+						 </div>
+					</div>
 					</div>
 				</section>
 			</main>
